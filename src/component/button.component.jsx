@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import './button.style.scss';
 
-const Button = ({ symbol, handleEvent }) => (
-    <button onClick={handleEvent}>
+const Button2 = ({ symbol, handleEvent }) => (
+    <Button variant="outlined" color="primary" onClick={handleEvent}>
         {symbol}
-    </button>
-);
-
-export default Button;
+    </Button>
+)
+export default Button2;

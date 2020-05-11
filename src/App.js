@@ -29,7 +29,7 @@ class App extends React.Component {
 
   render () {
     return(
-      <div>
+      <div className="main">
 
         <div>
           <h1 className='heading'>
@@ -37,15 +37,15 @@ class App extends React.Component {
           </h1>
         </div>
 
-        <h1>
+        <h1 className="heading">
           {this.state.counter}
         </h1>
 
-        <Button symbol='+' handleEvent={this.handleIncrement}/>
+        <Button className="heading" symbol='+ Increment' handleEvent={this.handleIncrement}/>
 
-        <Button symbol='-' handleEvent={this.handleDecrement}/>
+        <Button className="heading" symbol='- Decrement' handleEvent={this.handleDecrement}/>
 
-        <Button symbol='reset' handleEvent={this.handleReset}/>
+        <Button className="heading" symbol='reset' handleEvent={this.handleReset}/>
 
       </div>
     )
